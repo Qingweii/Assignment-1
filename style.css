@@ -51,7 +51,7 @@
 
 .home{
     display: flex;
-    background-image: url('img/winter-snow-city-the-city-wallpaper-preview.jpg') ;
+    background-image: url('img/home\ page.jpg') ;
     background-size: cover;
     height: 100vh;
 }
@@ -117,6 +117,12 @@
     text-align: center;
     padding-bottom: 10px;
     font-weight: lighter;
+}
+
+.about .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about .carousel .images-box img{
     height: 320px;
