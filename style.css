@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+
+/* navigation bar */
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(192, 172, 169);
+    padding: 18px;
+    position: fixed;
+  }
+
+  .name{
+    color: rgb(65, 64, 64);
+    letter-spacing: 4px;
+    font-size: 26px;
+    width: 18%;
+    cursor: pointer;
+  }
+
+
+  .bar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+  }
+  
+  .bar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+  }
+
+  li a:hover{
+    background-color: rgb(228, 228, 228);
+    color: rgb(65, 64, 64);
+  }
