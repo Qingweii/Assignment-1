@@ -95,7 +95,7 @@
 
 /* blinking effect on name */
 .blink {
-    animation: blink 3s infinite;
+    animation: blink 4s infinite;
 }
 
 @keyframes blink{
