@@ -143,8 +143,8 @@
         background-size: cover;
         overflow: hidden;
     }
-    .navigation .bar a{
-        font-size: 15px;
+    .navigation .bar li a{
+        font-size: 13px;
     }
     .navigation .name{
         font-size: 20px
@@ -155,14 +155,22 @@
     .home .intro h4{
         font-size: 17px;
     }
+    .about .about-content .blink{
+        font-size: 40px;
+    }
+    .about .about-content .home-description{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 600px){
-    .navigation .bar a{
-        font-size: 13px;
+
+    .navigation .bar li a{
+        font-size: 10px;
+        word-spacing: 1em;
     }
     .navigation .name{
-        font-size: 15px
+        font-size: 13px
     }
     .home .intro h1{
         font-size: 45px;
@@ -171,5 +179,36 @@
     .home .intro h4{
         font-size: 12px;
         left: 30px;
+    }
+    .about .about-content .blink{
+        font-size: 36px;
+    }
+    .about .about-content .home-description{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .navigation .bar li a{
+        font-size: 10px;
+        word-spacing: 1em;
+    }
+    .navigation .name{
+        font-size: 11px
+    }
+    .home .intro h1{
+        font-size: 40px;
+        left: 20px;
+    }
+    .home .intro h4{
+        font-size: 12px;
+        left: 30px;
+    }
+    .about .about-content .blink{
+        font-size: 33px;
+    }
+    .about .about-content .home-description{
+        font-size: 13px;
     }
 }
