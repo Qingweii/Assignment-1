@@ -122,12 +122,14 @@
 
 .about .owl-carousel{
     display: flex;
+    position: relative;
 }
 
 .about .owl-carousel .images-box{
     flex: 1;
     margin: 0 10px;
 }
+
 .about .owl-carousel .images-box img{
     height: 100%;
     width: 100%;
@@ -135,6 +137,48 @@
     border-radius: 15px;
     border: 3px solid rgb(173, 92, 119);
 }
+
+
+/* skills section */
+#skills{
+    background-color:rgb(235, 235, 235)
+}
+#skills .title{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#skills .subtitle{
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+}
+
+.skills_container .title1{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.skills_header{
+    align-items: center;
+}
+
+.skills_header .skills_list{
+    display: flex;
+    flex-direction: column;
+    word-spacing: 30px;
+    line-height: 1.8;
+}
+
+.skills_header .data{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 /* responsive media queries */
