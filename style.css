@@ -140,12 +140,15 @@
 }
 
 
+
 /* skills section */
+
 #skills{
     background-color:#C9B09A;
     padding-top: 60px;
     padding-bottom: 70px;
 }
+
 #skills .title{
     font-size: 38px;
     display: flex;
@@ -180,9 +183,14 @@
     font-size: 25px;
 }
 
+.content .journey{
+    font-size: 17px;
+    padding-right: 100px;
+}
+
 .content .button{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .button .button_link{
@@ -202,15 +210,11 @@
 }
 
 
-.skills_header{
-    align-items: right;
-}
-
 .skills_header .skills_list{
     display: flex;
     flex-direction: column;
     word-spacing: 30px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .skills_list .data{
@@ -225,6 +229,7 @@
 .skills_list .skills_bar {
     background-color: #e7d0bc;
     margin-right: 30px;
+    margin-bottom: 18px;
     height: 5px;
     border-radius: 3px;
     position: relative;
@@ -235,6 +240,7 @@
     height:100%;
     width: 70%;
     background-color: #883850;
+    border-radius: 3px;
 }
 
 .skills_bar #skills_py{
@@ -242,6 +248,7 @@
     height:100%;
     width: 65%;
     background-color: #883850;
+    border-radius: 3px;
 }
 
 .skills_bar #skills_sk{
@@ -249,6 +256,7 @@
     height:100%;
     width: 85%;
     background-color: #883850;
+    border-radius: 3px;
 }
 
 .skills_bar #skills_html{
@@ -256,13 +264,8 @@
     height:100%;
     width: 55%;
     background-color: #883850;
-
+    border-radius: 3px;
 }
-
-
-
-
-
 
 
 
@@ -271,28 +274,76 @@
 
 /* responsive media queries */
 @media (max-width: 947px ){
+
     .home{
         background-image: url('img/home\ page.jpg');
         background-size: cover;
         overflow: hidden;
     }
+
     .navigation .bar li a{
         font-size: 13px;
     }
+
     .navigation .name{
-        font-size: 20px
+        font-size: 20px;
     }
+
     .home .intro h1{
         font-size: 60px;
     }
+
     .home .intro h4{
         font-size: 17px;
     }
+
     .about .about-content .blink{
         font-size: 40px;
     }
+
     .about .about-content .home-description{
         font-size: 18px;
+    }
+
+    #skills{
+        overflow-x: hidden;
+    }
+
+    #skills .title{
+        font-size: 32px;
+    }
+
+    #skills .subtitle{
+        font-size: 19px;
+    }
+
+    .skills_container .content{
+        width: 100%;
+    }
+
+    .skills_container .content .title1{
+        font-size: 22px;
+    }
+
+    .content .journey{
+        font-size: 16px;
+    }
+
+    .content .button{
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .button .button_link{
+        padding: 10px 14px;
+        font-size: 17px;
+    }
+
+    .skills_header .skills_list{
+        width: 100%;
+    }
+    .skills_list .data{
+        font-size: 15px;
     }
 }
 
@@ -300,48 +351,137 @@
 
     .navigation .bar li a{
         font-size: 10px;
-        word-spacing: 1em;
+        word-spacing: 15px;
     }
+
     .navigation .name{
-        font-size: 13px
+        font-size: 13px;
     }
+
     .home .intro h1{
         font-size: 45px;
         left: 20px;
     }
+
     .home .intro h4{
         font-size: 12px;
         left: 30px;
     }
+
     .about .about-content .blink{
         font-size: 36px;
     }
+
     .about .about-content .home-description{
         font-size: 16px;
     }
+
+    #skills .title{
+        font-size: 30px;
+    }
+
+    #skills .subtitle{
+        font-size: 16px;
+    }
+
+    .skills_container .content{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .skills_container .content .title1{
+        font-size: 18px;
+    }
+
+    .content .journey{
+        font-size: 14px;
+    }
+
+    .content .button{
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+
+    .button .button_link{
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+
+    .skills_header .skills_list{
+        width: 100%;
+    }
+    .skills_list .data{
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 400px){
 
     .navigation .bar li a{
         font-size: 10px;
-        word-spacing: 1em;
+        word-spacing: 17px;
     }
+
     .navigation .name{
-        font-size: 11px
+        font-size: 11px;
     }
+
     .home .intro h1{
         font-size: 40px;
         left: 20px;
     }
+
     .home .intro h4{
         font-size: 12px;
         left: 30px;
     }
+
     .about .about-content .blink{
         font-size: 33px;
     }
+
     .about .about-content .home-description{
         font-size: 13px;
     }
+
+    #skills .title{
+        font-size: 28px;
+    }
+
+    #skills .subtitle{
+        font-size: 15px;
+    }
+
+    .skills_container .content{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .skills_container .content .title1{
+        font-size: 16px;
+    }
+
+    .content .journey{
+        font-size: 12px;
+    }
+
+    .content .button{
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .button .button_link{
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    .skills_header .skills_list{
+        width: 100%;
+    }
+    .skills_list .data{
+        font-size: 13px;
+    }
+
+
 }
