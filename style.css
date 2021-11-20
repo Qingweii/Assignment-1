@@ -267,6 +267,69 @@
     border-radius: 3px;
 }
 
+/* Qualification section */
+
+#qualification{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background-color: rgb(235, 228, 202);
+}
+
+#qualification .title{
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+#qualification .subtitle{
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+}
+
+.container .button_tab{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 32px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.container .button_tab .button_edu:hover{
+    color: #a35a70;
+}
+
+.container .button_tab .button_work:hover{
+    color: rgb(86, 156, 173);
+}
+
+#education{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#education .content .section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+#work{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#work .content .section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
 
 
 
