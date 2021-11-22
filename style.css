@@ -123,19 +123,22 @@ html{
 
 .about .about-content .home-description{
     font-size: 22px;
-    text-align: center;
     padding-bottom: 30px;
-    font-weight: lighter;
+    width: 100%;
+    text-align: center;
 }
+
 
 .about .carousel{
     display: flex;
     position: relative;
+    padding-top: 40px;
 }
 
 .about .carousel .images-box{
     flex: 1;
     margin: 0 10px;
+    position: sticky;
 }
 
 .about .carousel .images-box img{
@@ -305,14 +308,14 @@ html{
     padding-top: 32px;
     padding-bottom: 30px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 18px;
 }
 
-.container .button_tab .button_edu:hover{
+.container .button_tab #button_edu:hover{
     color: #a35a70;
 }
 
-.container .button_tab .button_work:hover{
+.container .button_tab #button_work:hover{
     color: rgb(86, 156, 173);
 }
 
@@ -335,6 +338,7 @@ html{
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
+    display: none;
 }
 
 #work .content .section{
