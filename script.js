@@ -1,5 +1,5 @@
-//Owl carousel script//
+//Owl carousel script
 
 
 
-// qualification tab //
+// Qualification tab 

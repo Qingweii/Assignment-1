@@ -6,6 +6,11 @@
   }
 
 /* navigation bar */
+
+html{
+    scroll-behavior: smooth;
+}
+
 .navigation{
     display: flex;
     justify-content: space-around;
@@ -31,6 +36,7 @@
     justify-content: space-around;
     width: 40%;
 }
+
   
 .navigation .bar a{
     font-size: 18px;
@@ -46,6 +52,7 @@
     background-color: rgb(228, 228, 228);
     color: rgb(65, 64, 64);
 }
+
 
 /* home section */
 
@@ -84,8 +91,8 @@
 /* About me section */
 
 .about{
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 150px;
     background-color: #DBD0BD;
     width: 100%;
 }
@@ -121,17 +128,17 @@
     font-weight: lighter;
 }
 
-.about .owl-carousel{
+.about .carousel{
     display: flex;
     position: relative;
 }
 
-.about .owl-carousel .images-box{
+.about .carousel .images-box{
     flex: 1;
     margin: 0 10px;
 }
 
-.about .owl-carousel .images-box img{
+.about .carousel .images-box img{
     height: 95%;
     width: 87%;
     object-fit: cover;
@@ -145,8 +152,8 @@
 
 #skills{
     background-color:#C9B09A;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
 #skills .title{
@@ -162,6 +169,7 @@
     justify-content: center;
     text-decoration-line: underline;
 }
+
 .skills_container{
     justify-content: center;
     padding-top: 90px;
@@ -290,6 +298,7 @@
 }
 
 .container .button_tab{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -307,11 +316,13 @@
     color: rgb(86, 156, 173);
 }
 
+
 #education{
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
 }
+
 
 #education .content .section{
     display: flex;
@@ -319,7 +330,8 @@
     padding-top: 30px;
 }
 
-#work{
+
+#work {
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
@@ -388,22 +400,23 @@
         font-size: 22px;
     }
 
-    .content .journey{
+    .skills_container .content .journey{
         font-size: 16px;
     }
 
-    .content .button{
+    .skills_container .content .button{
         margin-top: 35px;
         margin-bottom: 30px;
     }
 
-    .button .button_link{
+    .skills_container .button .button_link{
         padding: 10px 14px;
         font-size: 17px;
     }
 
     .skills_header .skills_list{
         width: 100%;
+
     }
     .skills_list .data{
         font-size: 15px;
@@ -456,16 +469,16 @@
         font-size: 18px;
     }
 
-    .content .journey{
+    .skills_container .content .journey{
         font-size: 14px;
     }
 
-    .content .button{
+    .skills_container .content .button{
         margin-top: 32px;
         margin-bottom: 30px;
     }
 
-    .button .button_link{
+    .skills_container .button .button_link{
         padding: 8px 12px;
         font-size: 15px;
     }
@@ -525,16 +538,16 @@
         font-size: 16px;
     }
 
-    .content .journey{
+    .skills_container .content .journey{
         font-size: 12px;
     }
 
-    .content .button{
+    .skills_container .content .button{
         margin-top: 28px;
         margin-bottom: 28px;
     }
 
-    .button .button_link{
+    .skills_container .button .button_link{
         padding: 7px 10px;
         font-size: 13px;
     }
