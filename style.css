@@ -16,7 +16,7 @@ html{
     justify-content: space-around;
     align-items: center;
     font-family: 'Oswald', sans-serif;
-    background-color: rgb(192, 172, 169);
+    background-color: rgb(189, 165, 171);
     padding: 18px;
     position: fixed;
     width: 100%;
@@ -280,6 +280,9 @@ html{
     border-radius: 3px;
 }
 
+
+
+
 /* Qualification section */
 
 #qualification{
@@ -370,6 +373,90 @@ html{
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
+}
+
+
+/* Contact me section */
+
+.contact_section{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.contact_section .title{
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_section .subtitle{
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+}
+
+.contact_section .contact_info{
+    font-size: 20px;
+    margin-top: 70px;
+    padding-left: 235px;
+    float: left;
+}
+
+
+.contact_info .call, .email, .location{
+    padding-bottom: 30px;
+}
+
+.contact_info .call #call_icon, .email #email_icon, .location #map_icon{
+    color: #743347;
+}
+
+
+
+.contact_form {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.contact_form .contact_inputs{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.contact_inputs .contents{
+    padding: 20px 24px;
+}
+
+.contact_inputs .contents .sub_content{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact_inputs .contents .sub2_content{
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.sub_content .name_s, .email_s{
+    padding: 10px 16px;
+}
+
+.sub_content .name_s .name_box, .email_s .email_box{
+    padding: 10px 16px;
+    border-radius: 2px;
+    border-style: none;
+    background-color: #f8eff1;
+}
+
+
+.contents .sub2_content .message_box{
+    padding: 10px 20px;
+    border-radius: 2px;
+    border-style: none;
+    background-color: #f8eff1;
 }
 
 
