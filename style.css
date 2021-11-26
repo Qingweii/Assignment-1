@@ -16,7 +16,7 @@ html{
     justify-content: space-around;
     align-items: center;
     font-family: 'Oswald', sans-serif;
-    background-color: rgb(189, 165, 171);
+    background-color: rgb(202, 171, 179);
     padding: 18px;
     position: fixed;
     width: 100%;
@@ -331,15 +331,10 @@ html{
 }
 
 
-.container .button_tab #button_edu:hover{
+.container .button_tab #button_edu:hover, #button_work:hover{
     color: rgb(240, 235, 235);
     background-color: #572736;
 
-}
-
-.container .button_tab #button_work:hover{
-    color: rgb(240, 235, 235);
-    background-color: #572736;
 }
 
 
@@ -492,6 +487,79 @@ html{
     transition: 1s;
 }
 
+
+
+/* Footer section */
+.footer{
+    padding-top: 25px;
+    padding-bottom: 45px;
+    background-color: rgb(202, 171, 179);
+}
+
+.footer .title{
+    padding-left: 35px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.footer .footer_section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .footer_section .footer_links{
+    display: flex;
+    justify-content: row;
+    padding-left: 130px;
+}
+
+.footer .footer_links .skills, .quali, .contact{ 
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 0px 65px;
+}
+
+.footer .footer_links .skills:hover, .quali:hover, .contact:hover{
+    color: rgb(65, 64, 64);
+}
+
+
+.footer .footer_section .social_media .footer_social{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+}
+
+.footer .footer_section .social_media .footer_social:hover{
+    color: rgb(65, 64, 64);
+}
+
+
+.footer .copy_right{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    font-size: 14px;
+    color: rgb(235, 235, 235);
+}
+
+.footer .extra {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.footer .extra .top{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer .extra .top:hover{
+    color: rgb(65, 64, 64);
+}
 
 
 /* responsive media queries */
