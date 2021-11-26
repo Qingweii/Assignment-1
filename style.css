@@ -30,6 +30,11 @@ html{
     width: 32%;
 }
 
+.navigation .name:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
 
 .navigation .bar{
     display: flex;
@@ -67,7 +72,6 @@ html{
 
 .home .intro{
     position: relative;
-    float: right;
 }
 
 .home .intro h1{
@@ -95,7 +99,7 @@ html{
 .about{
     padding-top: 100px;
     padding-bottom: 150px;
-    background-color: #DBD0BD;
+    background-color: rgb(247, 226, 199);
     width: 100%;
 }
 .about .about-content .blink{
@@ -156,7 +160,7 @@ html{
 /* skills section */
 
 #skills{
-    background-color:#C9B09A;
+    background-color:#f8e0d9;
     padding-top: 100px;
     padding-bottom: 80px;
 }
@@ -241,7 +245,7 @@ html{
 }
 
 .skills_list .skills_bar {
-    background-color: #e7d0bc;
+    background-color: #fff5ea;
     margin-right: 30px;
     margin-bottom: 18px;
     height: 5px;
@@ -503,6 +507,11 @@ html{
     color: rgb(255, 255, 255);
 }
 
+.footer .title:hover{
+    color: rgb(65, 64, 64);
+    cursor: pointer;
+}
+
 .footer .footer_section{
     display: flex;
     justify-content: space-around;
@@ -562,6 +571,7 @@ html{
 }
 
 
+
 /* responsive media queries */
 @media (max-width: 947px ){
 
@@ -592,7 +602,7 @@ html{
     }
 
     .about .about-content .home-description{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #skills{
@@ -658,7 +668,7 @@ html{
     }
 
     .contact_section .contact_info{
-        padding-left: 100px;
+        padding-left: 50px;
     }
 
     .contact_inputs{
@@ -672,7 +682,26 @@ html{
         flex-direction: column;
     }
 
+    .footer .title{
+        font-size: 27px;
+    }
 
+    .footer .footer_section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footer_section .footer_links{
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+        padding-left: 300px;
+
+    }
+
+    .footer .footer_section .footer_links .social_media{
+        float: left;
+    }
 
 }
 
@@ -709,7 +738,7 @@ html{
     }
 
     #skills .title{
-        font-size: 32px;
+        font-size: 29px;
     }
 
     #skills .subtitle{
@@ -727,6 +756,7 @@ html{
 
     .skills_container .content .journey{
         font-size: 16px;
+        padding: 0px 0px;
     }
 
     .skills_container .content .button{
@@ -747,7 +777,7 @@ html{
     }
 
     #qualification .title{
-        font-size: 32px;
+        font-size: 29px;
     }
 
     #qualification .subtitle{
@@ -755,7 +785,7 @@ html{
     }
 
     #work, #education{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .contact_section .title{
@@ -785,6 +815,23 @@ html{
         flex-direction: column;
     }
 
+    .footer .title{
+        font-size: 26px;
+    }
+
+    .footer .footer_section{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer .footer_section .footer_links{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
 }
 
 
@@ -792,7 +839,7 @@ html{
 
     .navigation .bar li a{
         font-size: 10px;
-        word-spacing: 17px;
+        word-spacing: 10px;
     }
 
     .navigation .name{
@@ -818,11 +865,11 @@ html{
     }
 
     #skills .title{
-        font-size: 28px;
+        font-size: 27px;
     }
 
     #skills .subtitle{
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .skills_container .content{
@@ -836,6 +883,8 @@ html{
 
     .skills_container .content .journey{
         font-size: 15px;
+        padding-right: 0px;
+        margin-left: 0px;
     }
 
     .skills_container .content .button{
@@ -856,7 +905,7 @@ html{
     }
 
     #qualification .title{
-        font-size: 28px;
+        font-size: 27px;
     }
 
     #qualification .subtitle{
@@ -872,7 +921,7 @@ html{
     }
 
     .contact_section .title{
-        font-size: 28px;
+        font-size: 27px;
     }
 
     .contact_section .subtitle{
@@ -904,6 +953,23 @@ html{
 
     .contents .sub2_content .box{
         width: 100%;
+    }
+
+    .footer .title{
+        font-size: 24px;
+    }
+
+    .footer .footer_section{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer .footer_section .footer_links{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 }
