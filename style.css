@@ -212,6 +212,7 @@ html{
     font-weight: bold;
     padding: 12px 16px;
     border-radius: 4px;
+    box-shadow: 5px 5px #5f5959;
     color: rgb(228, 228, 228);
     background-color: #883850;
     transition: 0.2s ease-in;
@@ -286,7 +287,7 @@ html{
 /* Qualification section */
 
 #qualification{
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 120px;
     background-color: rgb(247, 226, 199);
 }
@@ -316,7 +317,11 @@ html{
     font-size: 18px;
 }
 
-.container .button_tab #button_edu{
+.container .button_tab #cap_icon{
+    margin-left: 2px;
+}
+
+.container .button_tab #button_edu, #button_work{
     display: inline-block;
     border-radius: 5px;
     padding: 8px 10px;
@@ -325,14 +330,6 @@ html{
     transition: 0.2s ease-in-out;
 }
 
-.container .button_tab #button_work{
-    display: inline-block;
-    border-radius: 5px;
-    padding: 8px 10px;
-    background-color:#883850;
-    color: white;
-    transition: 0.2s ease-in-out;
-}
 
 .container .button_tab #button_edu:hover{
     color: rgb(240, 235, 235);
@@ -357,7 +354,7 @@ html{
 #education .content .section{
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 
@@ -372,15 +369,22 @@ html{
 #work .content .section{
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 10px;
 }
+
+#work .content .section .location .small{
+    font-weight: lighter;
+    font-size: 18px;
+}
+
 
 
 /* Contact me section */
 
-.contact_section{
+#Contact{
     padding-top: 100px;
     padding-bottom: 120px;
+    background-color: #f8e0d9;
 }
 
 .contact_section .title{
@@ -409,6 +413,12 @@ html{
     padding-bottom: 30px;
 }
 
+.contact_info .call .contact_subtitle, .email .email_subtitle, .location .locate_subtitle{
+    font-size: 17px;
+}
+
+
+
 .contact_info .call #call_icon, .email #email_icon, .location #map_icon{
     color: #743347;
 }
@@ -428,6 +438,7 @@ html{
 
 .contact_inputs .contents{
     padding: 20px 24px;
+    overflow: hidden;
 }
 
 .contact_inputs .contents .sub_content{
@@ -444,22 +455,42 @@ html{
     padding: 10px 16px;
 }
 
-.sub_content .name_s .name_box, .email_s .email_box{
+.sub_content .name_s .box, .email_s .box{
     padding: 10px 16px;
     border-radius: 2px;
     border-style: none;
-    background-color: #f8eff1;
+    background-color: #fff2f5;
 }
 
 
-.contents .sub2_content .message_box{
+.contents .sub2_content .box{
     padding: 10px 20px;
     border-radius: 2px;
     border-style: none;
-    background-color: #f8eff1;
+    background-color: #fff2f5;
 }
 
+.contents .submit_button #button{
+    padding: 9px 17px;
+    border-radius: 4px;
+    border-style: none;
+    margin-left: 19px;
+    margin-top: 14px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color:#a76075;
+}
 
+.contents .submit_button #button:hover{
+    background-color:#743347;
+}
+
+.contents .submit_button #button.active{
+    background-color: #9380b8;
+    transition: 1s;
+}
 
 
 
@@ -493,7 +524,7 @@ html{
     }
 
     .about .about-content .home-description{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #skills{
@@ -547,8 +578,34 @@ html{
     }
 
     #work, #education{
+        font-size: 18px;
+    }
+
+    .contact_section .title{
+        font-size: 34px;
+    }
+
+    .contact_section .subtitle{
         font-size: 19px;
     }
+
+    .contact_section .contact_info{
+        padding-left: 100px;
+    }
+
+    .contact_inputs{
+        display: flex;
+        flex-direction: inherit;
+        width: 100%;
+    }
+
+    .contact_inputs .contents .sub_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
 }
 
 
@@ -580,7 +637,7 @@ html{
     }
 
     .about .about-content .home-description{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #skills .title{
@@ -622,18 +679,46 @@ html{
     }
 
     #qualification .title{
-        font-size: 33px;
+        font-size: 32px;
     }
 
     #qualification .subtitle{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #work, #education{
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .contact_section .title{
+        font-size: 32px;
+    }
+
+    .contact_section .subtitle{
+        font-size: 16px;
+    }
+
+    .contact_section .contact_info{
+        padding-left: 80px;
+    }
+
+    .contact_info .call .contact_subtitle, .email .email_subtitle, .location .locate_subtitle{
+        font-size: 15px;
+    }
+
+    .contact_inputs{
+        display: flex;
+        flex-direction: inherit;
+        width: 100%;
+    }
+
+    .contact_inputs .contents .sub_content{
+        display: flex;
+        flex-direction: column;
     }
 
 }
+
 
 @media (max-width: 400px){
 
@@ -661,7 +746,7 @@ html{
     }
 
     .about .about-content .home-description{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     #skills .title{
@@ -682,7 +767,7 @@ html{
     }
 
     .skills_container .content .journey{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .skills_container .content .button{
@@ -692,7 +777,7 @@ html{
 
     .skills_container .button .button_link{
         padding: 7px 10px;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .skills_header .skills_list{
@@ -703,15 +788,54 @@ html{
     }
 
     #qualification .title{
-        font-size: 30px;
+        font-size: 28px;
     }
 
     #qualification .subtitle{
-        font-size: 17px;
+        font-size: 15px;
+    }
+
+    .container .button_tab{
+        font-size: 15px;
     }
 
     #work, #education{
         font-size: 15px;
+    }
+
+    .contact_section .title{
+        font-size: 28px;
+    }
+
+    .contact_section .subtitle{
+        font-size: 15px;
+    }
+
+    .contact_section .contact_info{
+        font-size: 16px;
+    }
+
+    .contact_info .call .contact_subtitle, .email .email_subtitle, .location .locate_subtitle{
+        font-size: 13px;
+    }
+
+    .contact_inputs{
+        display: flex;
+        flex-direction: inherit;
+        width: 100%;
+    }
+
+    .contact_inputs .contents .sub_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub_content .name_s .box, .email_s .box{
+        width: 100%;
+    }
+
+    .contents .sub2_content .box{
+        width: 100%;
     }
 
 }

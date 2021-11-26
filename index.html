@@ -27,7 +27,7 @@
                         <a href='#skills'>Skills</a>
                     </li>
                     <li>
-                        <a href='#Portfolio'>Portfolio</a>
+                        <a href='#Contact'>ContactMe</a>
                     </li>
                 </ul>
             </nav>
@@ -177,21 +177,21 @@
                 
                 <div class='content'>
                     <div class='section'>
-                        <h3 class='location'>Ryans' Kitchen</h3>
+                        <h3 class='location'>Ryans' Kitchen<br><span class='small'>-Waitress-</span></h3>
                         <span class='timeline'>2020-2020</span>
                     </div>
                 </div>
     
                 <div class='content'>
                     <div class='section'>
-                        <h3 class='location'>Cold Storage</h3>
+                        <h3 class='location'>Cold Storage<br><span class='small'>-Sales Assistant-</span></h3>
                         <span class='timeline'>2020-2021</span>
                     </div>
                 </div>
     
                 <div class='content'>
                     <div class='section'>
-                        <h3 class='location'>NTUC</h3>
+                        <h3 class='location'>NTUC<br><span class='small'>-Grocery Shopper-</span></h3>
                         <span class='timeline'>2021 - 2021</span>
                     </div>
                 </div>
@@ -201,7 +201,7 @@
         </section>
 
         <!-- Contact Me section -->
-        <section class='contact_section'>
+        <section class='contact_section' id='Contact'>
             <h2 class='title'>Contact Me</h2>
             <h4 class='subtitle'>Let's get in touch</h4>
 
@@ -210,7 +210,7 @@
                 <div class='call'>
                     <i class="fas fa-phone fa-1x" id='call_icon'></i>
                     <h4 class='contact_title'>Call  Me</h4>
-                    <span class='contact_subtitle'>9692 6417</span>
+                    <span class='contact_subtitle'>#65 9692 6417</span>
                 </div>
 
                 <div class='email'>
@@ -236,22 +236,27 @@
                         <div class='sub_content'>
                             <div class='name_s'>
                                 <label for = 'Username' class='name'>Name </label><br>
-                                <input type='text' class='name_box' required>
+                                <input type='text' class='box' required>
                             </div>
 
                             <div class='email_s'>
                                 <label for = 'Email' class='email'>Email </label><br>
-                                <input type='text' class='email_box' required>
+                                <input type='email' class='box' required>
                             </div>
                         </div>
 
                         <div class='sub2_content'>
                             <label for = 'Message' class='message'>Message </label><br>
-                            <textarea name ='message' class='message_box' rows='10' cols='50' required></textarea>
+                            <textarea name ='message' class='box' rows='10' cols='50' required></textarea>
+                        </div>
+
+                        <div class='submit_button' >
+                            <button id='button' onclick='mythirdFunction()'>
+                                <p>Submit</p>
+                            </button>
                         </div>
 
                     </div>
-
                 </div>
 
             </form>
