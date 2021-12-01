@@ -69,11 +69,10 @@ function mysecondFunction(){
 // Contact Me (submit button)
 
 var text = document.getElementById('button');
-var box = document.querySelectorAll('.box');
-
+var inputbox = document.getElementsByClassName('box');
 
 function mythirdFunction(){
-
+    
     text.innerHTML = 'Thanks!';
     text.classList.add('active');
 };
