@@ -30,11 +30,6 @@ html{
     width: 32%;
 }
 
-.navigation .name:hover{
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
 
 .navigation .bar{
     display: flex;
@@ -102,10 +97,19 @@ html{
     background-color: rgb(247, 226, 199);
     width: 100%;
 }
-.about .about-content .blink{
+
+.about .about_content{
+    padding-right: 150px;
+    padding-top: 120px;
+    float: right;
     text-align: center;
+}
+
+.about .about_content .blink{
     font-size: 55px;
     padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* blinking effect on name */
@@ -127,33 +131,74 @@ html{
 }
 
 
-.about .about-content .home-description{
-    font-size: 22px;
-    padding-bottom: 30px;
-    width: 100%;
-    text-align: center;
+.about .about_content .home-description{
+    font-size: 17px;
+    padding-bottom: 45px;
+}
+
+.about .about_content .resume .button_me{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: rgb(228, 228, 228);
+    background-color: #883850;
+    transition: 0.2s ease-in;
+}
+
+.about .about_content .resume :hover{
+    background: #692d3f;
 }
 
 
-.about .carousel{
-    display: flex;
+.about .about_me_container{
     position: relative;
-    padding-top: 40px;
+    padding-top: 20px;
+    max-width: 400px;
+    margin-left: 130px;
 }
 
-.about .carousel .images-box{
-    flex: 1;
-    margin: 0 10px;
-    position: sticky;
-}
-
-.about .carousel .images-box img{
-    height: 95%;
-    width: 87%;
+.about .about_me_container .image .me{
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 10px;
-    border: 3px solid #2C3B28;
+    max-width: 400px;
 }
+
+.about_me_container .image, .about_me_container .image--hidden{
+    display: none;
+}
+
+.about_me_container .image--visible{
+    display: block;
+}
+
+.about_me_container .carousel_actions{
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    position: absolute;
+    width: 100%;
+}
+
+.about_me_container .carousel_actions button{
+    border: 0;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+}
+
+.about_me_container .carousel_actions button#prev{
+    margin-left: 15px;
+}
+
+.about_me_container .carousel_actions button#next{
+    margin-right: 15px;
+}
+
 
 
 
@@ -222,7 +267,7 @@ html{
     transition: 0.2s ease-in;
 }
 
-.button li a:hover{
+.button :hover{
     color: #883850;
     background: #e7d0bc;
 }
@@ -505,11 +550,6 @@ html{
     padding-top: 30px;
     font-size: 30px;
     color: rgb(255, 255, 255);
-}
-
-.footer .title:hover{
-    color: rgb(65, 64, 64);
-    cursor: pointer;
 }
 
 .footer .footer_section{

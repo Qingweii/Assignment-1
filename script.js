@@ -1,4 +1,51 @@
-//Carousel script
+//About me tab (swiper)
+
+let slidePosition = 0;
+const slide = document.getElementsByClassName('image');
+const totalSlide = slide.length;
+
+document.getElementById('next').addEventListener('click',function(){
+    movetoNextSlide();
+});
+
+document.getElementById('prev').addEventListener('click',function(){
+    movetoPrevSlide();
+});
+
+function updateSlidePosition(){
+    
+    for (let move of slide){
+        move.classList.remove('image--visible');
+        move.classList.add('image--hidden');
+    }
+
+    slide[slidePosition].classList.add('image--visible');
+}
+
+
+function movetoNextSlide() {
+
+    if (slidePosition === totalSlide -1){
+        slidePosition = 0;
+    } else{
+        slidePosition++;
+    }
+
+    updateSlidePosition();
+};
+
+function movetoPrevSlide(){
+
+    if (slidePosition === 0){
+        slidePosition = totalSlide -1;
+    } else{
+        slidePosition--;
+    }
+
+    updateSlidePosition();
+};
+
+
 
 
 
@@ -16,6 +63,8 @@ function mysecondFunction(){
     y.style.display = 'block';
     x.style.display = 'none';
 }
+
+
 
 // Contact Me (submit button)
 

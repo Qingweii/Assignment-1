@@ -44,26 +44,35 @@
         <!-- About me section -->
         <section class='about' id='About'>
             
-            <div class='about-content'>
+            <div class='about_content'>
                 <h3 class='blink'> Hi, I'm Qing Wei</h3>
                 <p class='home-description'> Currently studying web technologies and UI/UX design.<br> I am a keen learner and I have an interest in designing and coding.</p>
+                <div class='resume'>
+                    <a href='file:///C:/Users/qingw/Documents/Random%20Stuffs/Job/Resume.pdf' class='button_me'>Read More</a>
+                </div>
             </div>
+
+            <div class='about_me_container'>
                 
-            <div class='carousel'>
-                <div class='images-box'>
-                    <img src='img/portrait.jpg' alt='me'>
+                <div class='image image--visible'>
+                    <img src='img/portrait.jpg' alt='' class='me'>
                 </div>
-                <div class='images-box'>
-                    <img src='img/winter-snow-city-the-city-wallpaper-preview.jpg' alt='me'>
+
+                <div class='image'>
+                    <img src='img/winter-snow-city-the-city-wallpaper-preview.jpg' alt='' class='me'>
                 </div>
-                <div class='images-box'>
-                    <img src='img/portrait.jpg' alt='me'>
+
+                <div class='image'>
+                    <img src='img/random pic.jfif' alt='' class='me'>
                 </div>
-                <div class='images-box'>
-                    <img src='img/winter-snow-city-the-city-wallpaper-preview.jpg' alt='me'>
+
+                <div class='carousel_actions'>
+                    <button id='prev'> < </button>
+                    <button id='next'> > </button>
                 </div>
-                
+
             </div>
+            
         </section>
 
         <!-- Skills section -->
@@ -79,11 +88,7 @@
                     </div>
 
                 <div class='button'>
-                    <ul>
-                        <li>
-                            <a href='file:///C:/Users/qingw/Documents/Random%20Stuffs/Job/Resume.pdf' class='button_link'>Read More</a>
-                        </li>
-                    </ul>
+                    <a href='file:///C:/Users/qingw/Documents/Random%20Stuffs/Job/Resume.pdf' class='button_link'>Read More <i class="fas fa-angle-right"></i></a>
                 </div>
 
                 </div>
@@ -141,8 +146,8 @@
             
             <div class='container'>
                 <div class='button_tab'>
-                    <div id='button_edu' onclick='mysecondFunction()'>Education</div>
-                    <div id='button_work' onclick="myFunction()">Work</div>
+                    <div id='button_edu' onclick='mysecondFunction()'><i class="fas fa-graduation-cap"></i> Education</div>
+                    <div id='button_work' onclick="myFunction()"><i class="fas fa-briefcase"></i> Work</div>
                 </div>
             </div>
             
@@ -208,20 +213,17 @@
             <div class='contact_info'>
 
                 <div class='call'>
-                    <i class="fas fa-phone fa-1x" id='call_icon'></i>
-                    <h4 class='contact_title'>Call  Me</h4>
+                    <h4 class='contact_title'><i class="fas fa-phone fa-1x" id='call_icon'></i> Call  Me</h4>
                     <span class='contact_subtitle'>#65 9692 6417</span>
                 </div>
 
                 <div class='email'>
-                    <i class="fas fa-envelope fa-1x" id='email_icon'></i>
-                    <h4 class='email_title'>Email</h4>
+                    <h4 class='email_title'><i class="fas fa-envelope fa-1x" id='email_icon'></i> Email</h4>
                     <span class='email_subtitle'>qingwei.wong5@gmail.com</span>
                 </div>
 
                 <div class='location'>
-                    <i class="fas fa-map-marker-alt fa-1x" id='map_icon'></i>
-                    <h4 class='locate_title'>Location</h4>
+                    <h4 class='locate_title'><i class="fas fa-map-marker-alt fa-1x" id='map_icon'></i> Location</h4>
                     <span class='locate_subtitle'>364 Smith St #02-163, 050364, Singapore</span>
                 </div>
 
@@ -252,7 +254,7 @@
 
                         <div class='submit_button' >
                             <button id='button' onclick='mythirdFunction()'>
-                                <p>Submit</p>
+                                <p>Submit <i class="far fa-paper-plane"></i></p>
                             </button>
                         </div>
 
@@ -308,7 +310,6 @@
             </div>
 
         </footer>
-    
     
     <script src="script.js"></script>
     </body>
