@@ -1,4 +1,4 @@
-//About me tab (swiper)
+//About me tab (carousel)
 
 let slidePosition = 0;
 const slide = document.getElementsByClassName('image');
@@ -49,7 +49,7 @@ function movetoPrevSlide(){
 
 
 
-// Qualification tab 
+// Qualification tab (toggle between edu and work button)
 
 var x = document.getElementById('work');
 var y = document.getElementById('education');
