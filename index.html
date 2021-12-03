@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -48,7 +48,7 @@
                 <h3 class='blink'> Hi, I'm Qing Wei</h3>
                 <p class='home-description'> Currently studying web technologies and UI/UX design.<br> I am a keen learner and I have an interest in designing and coding. <br> Outside studying hours, I love to travel and explore the world :)</p>
                 <div class='resume'>
-                    <a href='file:///C:/Users/qingw/Documents/Random%20Stuffs/Job/Resume.pdf' class='button_me'>My Resume</a>
+                    <a href='file:///C:/Users/qingw/Documents/Random%20Stuffs/Job/Resume.pdf' class='button_me'>My Resume <i class="fas fa-envelope-open-text"></i></a>
                 </div>
             </div>
 
@@ -237,24 +237,24 @@
 
                         <div class='sub_content'>
                             <div class='name_s'>
-                                <label for = 'Username' class='name'>Name </label><br>
+                                <label for = 'Username' id='name' class='name'>Name </label><br>
                                 <input type='text' class='box' required>
                             </div>
 
                             <div class='email_s'>
-                                <label for = 'Email' class='email'>Email </label><br>
+                                <label for = 'Email' id='email' class='email'>Email </label><br>
                                 <input type='email' class='box' required>
                             </div>
                         </div>
 
                         <div class='sub2_content'>
-                            <label for = 'Message' class='message'>Message </label><br>
+                            <label for = 'Message' id='message' class='message'>Message </label><br>
                             <textarea name ='message' class='box' rows='10' cols='50' required></textarea>
                         </div>
 
                         <div class='submit_button' >
                             <button id='button' onclick='mythirdFunction()'>
-                                <p>Submit <i class="far fa-paper-plane"></i></p>
+                                <div>Submit <i class="far fa-paper-plane"></i></div>
                             </button>
                         </div>
 
