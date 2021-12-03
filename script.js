@@ -77,6 +77,7 @@ function mythirdFunction(){
     text.classList.add('active');
 };
 
+// Message upon submission (submit button)
 function myfourthFunction(event){
     alert('Your message was submitted. Thank You!');
     event.preventDefault();
