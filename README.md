@@ -23,9 +23,14 @@ There will also be some interactions for users to click on.
 
 - My website works on different screen sizes (media queries) as well (eg, mobile, tablets...)
 
+
 # Testing
+# Didnt work at first
 - One of the interesting bug i found is at the ContactMe page:
  - When the users were to click on the submit button without typing any text on the textbox, the button text will still change to 'thanks' but the error message also appears at the required field
+
+# Work successfully
+- After adding and adjusting the submit button through Javascript by adding onsubmit function and rearranging the all the related functions, it works successfully as the submit button will appear the alert message and the button text will change to 'thanks' upon submission.
 
 
 # External source code used

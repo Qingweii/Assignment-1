@@ -81,4 +81,5 @@ function mythirdFunction(){
 function myfourthFunction(event){
     alert('Your message was submitted. Thank You!');
     event.preventDefault();
+    mythirdFunction();
 }
