@@ -76,3 +76,8 @@ function mythirdFunction(){
     text.innerHTML = 'Thanks!';
     text.classList.add('active');
 };
+
+function myfourthFunction(event){
+    alert('Your message was submitted. Thank You!');
+    event.preventDefault();
+}

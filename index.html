@@ -229,7 +229,7 @@
 
             </div>
 
-            <form class='contact_form'>
+            <form action="/submit.php" class='contact_form' onsubmit='myfourthFunction(event)'>
 
                 <div class='contact_inputs'>
 
@@ -252,7 +252,7 @@
                             <textarea name ='message' class='box' rows='10' cols='50' required></textarea>
                         </div>
 
-                        <div class='submit_button' >
+                        <div class='submit_button'>
                             <button id='button' onclick='mythirdFunction()'>
                                 <span>Submit <i class="far fa-paper-plane"></i></span>
                             </button>
