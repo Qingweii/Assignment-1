@@ -564,7 +564,7 @@ html{
 
 .footer .footer_section .footer_links{
     display: flex;
-    justify-content: row;
+    flex-direction: row;
     padding-left: 130px;
 }
 
